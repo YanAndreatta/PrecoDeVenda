@@ -1,2 +1,4 @@
 # PrecoDeVenda
-Versão da página em HTML e CSS / JS
+Versão inicial da página em HTML e CSS / JS
+
+Idealização da página.
