@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço de Venda - Markup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Calculadora de preço de venda</h1>
+    </header>
+
+    <section id="sc1">
+        <div>
+            <p>Despesas Administrativas (Fixo)</p>
+            Valor da despesa R$ <input type="number" name="txtN" id="txtN">
+            <input type="button" value="Adicionar" onclick="adicionarF()">
+            Faturamento R$ <input type="number" name="txtF" id="txtF"> /Mês
+           
+            <select name="listaDF" id="listaDF" size="10"></select>
+        </div>
+        
+        Custo Fixo %
+        <div id="res1">
+
+        </div>
+    </section>
+
+    <section id="sc2">
+        <div>
+            <p>Despesas de Venda (Variável) <br>* Incluindo o imposto</p> <!-- Separar depois -->
+            Valor da despesa % <input type="number" name="txtN2" id="txtN2">
+            <input type="button" value="Adicionar" onclick="adicionarV()"><br>
+            <select name="listaDV" id="listaDV" size="10"></select>
+
+            Custo Variável %
+            <div id="res2">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sc3">
+        <div>
+            <p>Calculo preço de venda</p>
+            Custo da mercadoria <input type="number" name="txtN3" id="txtN3"><br>
+            Lucro pretendido <input type="number" name="txtN4" id="txtN4"><br>
+            <input type="button" value="Calcular" onclick="calcular()">
+            <br>
+            Preço de venda:
+            <div id="res3">
+
+            </div>
+            
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
