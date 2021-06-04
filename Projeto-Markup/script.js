@@ -83,9 +83,12 @@ function adicionarV() {
 }
 
 function calcular() {
-    let num = somarVet(valoresF, valoresV)  
-    let precoTot = precoM.value/(1-((num + Number(lucro.value))/100))
-    res3.innerHTML= `${precoTot.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`
-    res3.innerHTML = `${precoTot}`
-    
+    let num = somarVet(valoresF, valoresV)
+    if(num.length == 0){
+        res3.innerHTML = ''
+    }  else {
+        let precoTot = precoM.value/(1-((num + Number(lucro.value))/100))
+        res3.innerHTML= `${precoTot.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`
+        res3.innerHTML = `${precoTot}`
+    } 
 }

@@ -1,22 +1,17 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(Fonts/OpenSans-Regular.ttf) format('truetype'), url(Fonts/OpenSans-Bold.ttf) format('truetype');
+    
+}
+
 body {
-    background-color: aqua;
-    font: normal 15pt Arial;
-    line-height: 1.5;
-}
-
-#sc1 {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 450px;
-    margin: left;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
-}
-
-header {
-    background: white;
-    border-radius: 10px;
-    width: auto;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-image: linear-gradient(to top, #1C2C21, #30492B, #445B31, #4F6827, #97B261);
+    background-attachment: fixed;
 }
 
 select {
@@ -26,21 +21,47 @@ select {
     width: 450px;
 }
 
-#sc2 {
+section {
+    display: inline-block;
+    height: auto;
     background: white;
     border-radius: 10px;
     padding: 15px;
     width: 450px;
     margin-top: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
+    box-shadow: 4px 4px 15px #1c2c21;
 }
 
-#sc3 {
-    background: white;
+input {
+    font-weight: bold;
+    background-color: #97b2614b;
+    border-radius: 6px;
+    width: 150px; 
+    margin-top: 5px;
+    margin-bottom: 5px;   
+}
+
+h1 {
+    background-color: white;
+    text-align: center;
     border-radius: 10px;
-    padding: 15px;
-    width: 430px;
-    margin-top: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
+    width: auto;
 }
 
+span {
+    display: block;
+}
+
+.inputsQuebra {
+    display: block;
+}
+
+.inputBotao {
+    background-color: #769b3a;
+    width: 80px;
+    box-shadow: 1px 3px 4px #1c2c216b;
+}
+
+.sectionsEspeciais {
+   padding-top: 41px;
+}
