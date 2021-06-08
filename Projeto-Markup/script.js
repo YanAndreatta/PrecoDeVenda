@@ -85,10 +85,10 @@ function adicionarV() {
 function calcular() {
     let num = somarVet(valoresF, valoresV)
     if(num.length == 0){
-        res3.innerHTML = ''
+        res3.innerHTML = ''    // Colocar mensagem de erro.
     }  else {
         let precoTot = precoM.value/(1-((num + Number(lucro.value))/100))
         res3.innerHTML= `${precoTot.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`
-        res3.innerHTML = `${precoTot}`
+        res3.innerHTML = `${toFixed(precoTot)}`
     } 
 }
