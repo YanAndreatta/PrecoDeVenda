@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,68 +8,67 @@
     <title>Preço de Venda - Markup</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <header>
-        <h1>Calculadora de preço de venda</h1>
+
+    <header class="header"> 
+        <h1>Calculadora Markup</h1>
     </header>
-
-    <section>
-        <div>
-            <p>Despesas Administrativas (Fixo)</p>
-            <p>
-                Valor da despesa <input type="number" name="txtN" id="txtN">
-                <input type="button" value="Adicionar" onclick="adicionarF()" class="inputBotao">
-                Faturamento / Mês 
-                <input type="number" name="txtF" id="txtF" class="inputsQuebra">
-            </p>
-            <select name="listaDF" id="listaDF" size="10"></select>
-        </div>
-        
-        Custo Fixo %
-        <div id="res1">
-
-        </div>
-    </section>
-
-    <section class="sectionsEspeciais">
-        <div>
-            <p>Despesas de Venda (Variável) <span>* Incluindo o imposto</span></p> 
-            
-            <p>
-                Valor da despesa % <input type="number" name="txtN2" id="txtN2">
-                <input type="button" value="Adicionar" onclick="adicionarV()" class="inputBotao">
-            </p>
-            <select name="listaDV" id="listaDV" size="10"></select>
-            
-            Custo Variável %
-            <div id="res2">
-
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div>
-            <p>Calculo preço de venda</p>
-            <p>
-                Custo da mercadoria <input type="number" name="txtN3" id="txtN3" class="inputsQuebra">
-                Lucro pretendido <input type="number" name="txtN4" id="txtN4" class="inputsQuebra">
-                <input type="button" value="Calcular" onclick="calcular()" class="inputBotao">
-            </p>
-            Preço de Venda
-            <div id="res3">
-
-            </div>
-            
-        </div>
-    </section>
     
+    <div class="spacing"></div>
+    <main class="flex-container">
+        <section class="flex-container">
+            <div>
+                <h2>Despesas Administrativas (Fixo)</h2>
+                <label>Faturamento / Mês</label>
+                <p><input type="number" name="txtF" id="txtF"></p>
+                <label>Valor da despesa</label>
+                <p><input type="number" name="txtN" id="txtN"></p>
+                <p><input type="button" value="Adicionar" onclick="adicionarF()" class="inputBotao"></p>
+                <select name="listaDF" id="listaDF" size="10"></select>
+                
+                <label>Custo Fixo %</label>
+                <div id="res1" class="res1"></div>
+            </div>
+        </section>
+
+        <section class="flex-container">
+            <div>
+                <h2>Despesas de Venda (Variável)</h2>
+                <p>**Incluindo o imposto</p>
+                <label>Valor da despesa %</label>
+                <p><input type="number" name="txtN2" id="txtN2"></p>
+                <p><input type="button" value="Adicionar" onclick="adicionarV()" class="inputBotao"></p>
+
+                <select name="listaDV" id="listaDV" size="10"></select>
+
+                <p>Custo Variável %</p>
+                <div id="res2" class="res2"></div>
+            </div>
+        </section>
+
+        <section class="flex-container">
+            <div class="precoVenda">
+                <h2>Calculo preço de venda</h2>
+                <label>Custo da mercadoria</label>
+                <p><input type="number" name="txtN3" id="txtN3" class="inputsQuebra"></p>
+                <label>Lucro pretendido</label>
+                <p><input type="number" name="txtN4" id="txtN4" class="inputsQuebra"></p>
+                <p><input type="button" value="Calcular" onclick="calcular()" class="inputBotao"></p>
+
+                <p>Preço de Venda</p>
+                <div id="res3" class="res2"></div>
+            </div>
+        </section>
+    </main>
+
+    <div></div>
+
     <footer>
-        <div>
-            <p><!-- Montar Footer --></p>
-        </div>
+        <p></p>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
