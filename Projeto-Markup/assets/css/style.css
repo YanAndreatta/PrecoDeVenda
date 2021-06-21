@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/assets/Fonts/OpenSans-Regular.ttf) format('truetype'), url(/assets/Fonts/OpenSans-Bold.ttf) format('truetype');
+}
+
+:root {
+    --primary-color: #162440;
+    --secondary-color: #111826;
+    --tertiary-color: #979CA6;
+    --white-color: #fff;
+    --gap: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+h4 {
+    font-size: 3.5rem;
+}
+
+h5 {
+    font-size: 3rem;
+}
+
+h6 {
+    font-size: 2.5rem;
+}
+
+select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    width: 450px;
+    padding: 10px;
+    overflow: auto;
+    /* background-color: #97b2614b; */
+}
+
+aside > h1 {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+}
+
+.main-bg {
+    background-image: url('/assets/img/main-bg.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 5px 3px 4px 0px rgba(0, 0, 0, 0.452);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    background-color: #ededed;
+    list-style: none;
+}
+
+.menu li {
+    display: inline; 
+}
+
+.menu ul li a {
+    padding: 10px;
+    display: inline-block;
+    background-color: #ededed;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 3px solid #ededed;
+}
+
+.menu ul li a:hover {
+    background-color: #d6d6d6;
+    color: #6d6d66;
+    border-bottom: 3px solid #ea0000;
+}

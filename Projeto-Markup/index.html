@@ -6,34 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preço de Venda - Markup</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="header"> 
-        <h1>Calculadora Markup</h1>
-    </header>
-    
-    <div class="spacing"></div>
-    <main class="flex-container">
-        <section class="flex-container">
-            <div>
+    <aside class="menu">
+        <h1>Calculadora Markup</h1> <!-- Colocar aside/menu aqui -->
+        <ul>
+            <li><a href="#dpf">Despesas Fixas</a></li>
+            <li><a href="#dpv">Despesas Variáveis</a></li>
+            <li><a href="#calc">Calcular</a></li>
+        </ul>
+    </aside>
+
+    <div></div>
+
+    <main>
+
+        <section class="section main-bg flex" id="dpf">
+            <div class="main-content">
                 <h2>Despesas Administrativas (Fixo)</h2>
+
                 <label>Faturamento / Mês</label>
                 <p><input type="number" name="txtF" id="txtF"></p>
                 <label>Valor da despesa</label>
                 <p><input type="number" name="txtN" id="txtN"></p>
                 <p><input type="button" value="Adicionar" onclick="adicionarF()" class="inputBotao"></p>
                 <select name="listaDF" id="listaDF" size="10"></select>
-                
-                <label>Custo Fixo %</label>
+
+                <p>Custo Fixo %</p>
                 <div id="res1" class="res1"></div>
             </div>
         </section>
 
-        <section class="flex-container">
-            <div>
+        <section class="section main-bg flex" id="dpv">
+            <div class="main-content">
                 <h2>Despesas de Venda (Variável)</h2>
                 <p>**Incluindo o imposto</p>
                 <label>Valor da despesa %</label>
@@ -47,8 +57,8 @@
             </div>
         </section>
 
-        <section class="flex-container">
-            <div class="precoVenda">
+        <section class="section main-bg flex" id="calc">
+            <div class="main-content">
                 <h2>Calculo preço de venda</h2>
                 <label>Custo da mercadoria</label>
                 <p><input type="number" name="txtN3" id="txtN3" class="inputsQuebra"></p>
@@ -68,7 +78,7 @@
         <p></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

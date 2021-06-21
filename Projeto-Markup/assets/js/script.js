@@ -55,9 +55,9 @@ function adicionarF() {
 }
 
 function somarVet(vet1, vet2) {   // Soma os valores dos vetores
-    if (vet1.length === 0) {
+    if (vet1.length <= 0) {
         return window.alert('Adicione pelo menos uma despesa fixa');
-    } else if (vet2.length === 0) {
+    } else if (vet2.length <= 0) {
         return window.alert('Adicione pelo menos uma despesa variável');
     } else {
         let somaVt1 = 0;
