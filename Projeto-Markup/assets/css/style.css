@@ -10,7 +10,7 @@
     --secondary-color: #111826;
     --tertiary-color: #979CA6;
     --white-color: #fff;
-    --gap: 3rem;
+    --gap: 2rem;
 }
 
 * {
@@ -27,6 +27,7 @@ html {
 body {
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-size: 2rem;
+
 }
 
 
@@ -60,13 +61,19 @@ h6 {
 }
 
 select {
+    /* position: relative; */
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
-    width: 450px;
+    max-width: 100%;
+    min-width: 100%;
     padding: 10px;
     overflow: auto;
     /* background-color: #97b2614b; */
+}
+
+p {
+    padding: 10px 0;
 }
 
 aside > h1 {
@@ -76,7 +83,7 @@ aside > h1 {
 }
 
 .main-bg {
-    background-image: url('/assets/img/main-bg.svg');
+    background-image: url('../img/main-bg.svg');
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
@@ -84,7 +91,7 @@ aside > h1 {
 
 .main-content {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 10px;
     padding: var(--gap);
     background-color: var(--secondary-color);
     border-radius: 10px;
@@ -123,4 +130,21 @@ aside > h1 {
     background-color: #d6d6d6;
     color: #6d6d66;
     border-bottom: 3px solid #ea0000;
+}
+
+.res2 {
+    padding-top: 10px;
+}
+
+.res1 {
+    padding-top: 10px;
+}
+
+.inputBotao {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.inputs {
+    padding: 10px;
 }

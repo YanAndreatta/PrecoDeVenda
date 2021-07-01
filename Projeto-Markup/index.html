@@ -28,12 +28,13 @@
 
         <section class="section main-bg flex" id="dpf">
             <div class="main-content">
-                <h2>Despesas Administrativas (Fixo)</h2>
+                <h2>Despesas Administrativas</h2>
+                <h3>(Fixo)</h3>
 
                 <label>Faturamento / Mês</label>
-                <p><input type="number" name="txtF" id="txtF"></p>
+                <p><input type="number" name="txtF" id="txtF" class="inputs"></p>
                 <label>Valor da despesa</label>
-                <p><input type="number" name="txtN" id="txtN"></p>
+                <p><input type="number" name="txtN" id="txtN" class="inputs"></p>
                 <p><input type="button" value="Adicionar" onclick="adicionarF()" class="inputBotao"></p>
                 <select name="listaDF" id="listaDF" size="10"></select>
 
@@ -44,10 +45,11 @@
 
         <section class="section main-bg flex" id="dpv">
             <div class="main-content">
-                <h2>Despesas de Venda (Variável)</h2>
+                <h2>Despesas de Venda</h2>
+                <h3>(Variável)</h3>
                 <p>**Incluindo o imposto</p>
                 <label>Valor da despesa %</label>
-                <p><input type="number" name="txtN2" id="txtN2"></p>
+                <p><input type="number" name="txtN2" id="txtN2" class="inputs"></p>
                 <p><input type="button" value="Adicionar" onclick="adicionarV()" class="inputBotao"></p>
 
                 <select name="listaDV" id="listaDV" size="10"></select>
@@ -58,12 +60,12 @@
         </section>
 
         <section class="section main-bg flex" id="calc">
-            <div class="main-content">
+            <div class="main-content calculo-preco-de-venda">
                 <h2>Calculo preço de venda</h2>
                 <label>Custo da mercadoria</label>
-                <p><input type="number" name="txtN3" id="txtN3" class="inputsQuebra"></p>
+                <p><input type="number" name="txtN3" id="txtN3" class="inputs"></p>
                 <label>Lucro pretendido</label>
-                <p><input type="number" name="txtN4" id="txtN4" class="inputsQuebra"></p>
+                <p><input type="number" name="txtN4" id="txtN4" class="inputs"></p>
                 <p><input type="button" value="Calcular" onclick="calcular()" class="inputBotao"></p>
 
                 <p>Preço de Venda</p>
