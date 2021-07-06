@@ -12,3 +12,5 @@ O que é Markup?
 "Markup é um índice utilizado na formação do preço de venda de um produto ou serviço, que aparece na definição do seu custo."
 
 Saiba mais: https://fia.com.br/blog/markup/.
+
+Para testar: https://calculadora-markup.netlify.app/
